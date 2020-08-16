@@ -10,7 +10,7 @@ export const EventContext  = createContext();
      const [modal, setmodal] = useState(false);
 
 useEffect(() => {
-    fetch('https://event-list-me.herokuapp.com//event-list/' ,{
+    fetch('http://localhost:3000/event-list/' ,{
     'Content-Type':  'application/json',
 }).then(x=>x.json())
         .then(res=>{
